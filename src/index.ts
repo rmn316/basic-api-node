@@ -4,7 +4,7 @@ import express from "express";
 // initialize configuration
 dotenv.config();
 
-const port = 3000; // process.env.SERVER_PORT;
+const port = process.env.SERVER_PORT;
 const app = express();
 
 app.get("/", (request, response) => {
